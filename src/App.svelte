@@ -15,10 +15,8 @@
 </script>
   
 <style lang="scss">
-  :global(body) {
-    margin: 0;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-  }
+  // Import SCSS
+  @import './styles/variables.scss';
 </style>
   
 <h1>{test}</h1>
