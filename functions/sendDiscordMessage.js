@@ -1,7 +1,4 @@
-// AWS
-import { APIGatewayEvent, Context } from 'aws-lambda';
-
-export const handler = async (event: APIGatewayEvent, context: Context) => {
+export const handler = async (event, context) => {
     return new Promise(async (resolve, reject) => {
         resolve({
             statusCode: 200,
