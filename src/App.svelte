@@ -1,5 +1,7 @@
 <script lang='typescript'>
     import {onMount} from 'svelte';
+    import * as data from './data/About.json';
+
     let count: number = 0;
     onMount(() => {
       const interval = setInterval(() => count++, 1000);
@@ -7,6 +9,8 @@
         clearInterval(interval);
       };
     });
+
+    const test = data.languages.TypeScript;
   </script>
   
   <style lang="scss">
@@ -57,7 +61,7 @@
   <div class="App">
     <header class="App-header">
       <img src="/logo.svg" class="App-logo" alt="logo" />
-      <p>Edit <code>src/App.svelte</code> and save to reload.</p>
+      <p>Edit <code>src/App.svelte</code> and save to reload {test}.</p>
       <p>Page has been open for <code>{count}</code> seconds.</p>
       <p>
         <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
