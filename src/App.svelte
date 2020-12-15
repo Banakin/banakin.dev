@@ -1,73 +1,33 @@
 <script lang='typescript'>
-    import {onMount} from 'svelte';
-    import * as data from './data/About.json';
+  // Import components
+  import Navbar       from './pages/Navbar.svelte';
+  import ScrollToTop  from './pages/ScrollToTop.svelte';
 
-    let count: number = 0;
-    onMount(() => {
-      const interval = setInterval(() => count++, 1000);
-      return () => {
-        clearInterval(interval);
-      };
-    });
+  // Import pages
+  import Home      from './pages/Home.svelte';
+  import About     from './pages/About.svelte';
+  import Projects  from './pages/Projects.svelte';
+  import Pricing   from './pages/Pricing.svelte';
+  import Contact   from './pages/Contact.svelte';
 
-    const test = data.languages.TypeScript;
-  </script>
+  import * as data from './data/About.json';
+  const test = data.languages.TypeScript;
+</script>
   
-  <style lang="scss">
-    :global(body) {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .App {
-      text-align: center;
-      code {
-        background: #0002;
-        padding: 4px 8px;
-        border-radius: 4px;
-      }
-      p {
-        margin: 0.4rem;
-      }    
-    }
-    .App-header {
-      background-color: #f9f6f6;
-      color: #333;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: calc(10px + 2vmin);
-    }
-    .App-link {
-      color: #ff3e00;
-    }
-    .App-logo {
-      height: 36vmin;
-      pointer-events: none;
-      margin-bottom: 3rem;
-      animation: App-logo-spin infinite 1.6s ease-in-out alternate;
-    }
-    @keyframes App-logo-spin {
-      from {
-        transform: scale(1);
-      }
-      to {
-        transform: scale(1.06);
-      }
-    }
-  </style>
+<style lang="scss">
+  :global(body) {
+    margin: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+</style>
   
-  <div class="App">
-    <header class="App-header">
-      <img src="/logo.svg" class="App-logo" alt="logo" />
-      <p>Edit <code>src/App.svelte</code> and save to reload {test}.</p>
-      <p>Page has been open for <code>{count}</code> seconds.</p>
-      <p>
-        <a class="App-link" href="https://svelte.dev" target="_blank" rel="noopener noreferrer">
-          Learn Svelte
-        </a>
-      </p>
-    </header>
-  </div>
-  
+<h1>{test}</h1>
+
+<Navbar />
+<ScrollToTop />
+
+<Home />
+<About />
+<Projects />
+<Pricing />
+<Contact />
