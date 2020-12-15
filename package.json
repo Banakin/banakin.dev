@@ -5,6 +5,7 @@
     "test": "web-test-runner \"src/**/*.test.ts\""
   },
   "dependencies": {
+    "aws-lambda": "^1.0.6",
     "svelte": "^3.24.0"
   },
   "devDependencies": {
@@ -13,6 +14,7 @@
     "@snowpack/plugin-typescript": "^1.1.1",
     "@snowpack/web-test-runner-plugin": "^0.1.5",
     "@testing-library/svelte": "^3.0.0",
+    "@types/aws-lambda": "^8.10.66",
     "@types/chai": "^4.2.13",
     "@types/snowpack-env": "^2.3.2",
     "@web/test-runner": "^0.10.0",

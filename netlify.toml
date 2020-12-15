@@ -1,4 +1,3 @@
 [build]
-  publish = "build/public/"
+  publish = "build/"
   command = "npm run build"
-  functions = "build/functions/"
