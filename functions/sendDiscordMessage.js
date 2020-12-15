@@ -1,4 +1,4 @@
-export const handler = async (event, context) => {
+exports.handler = async function(event, context) {
     return new Promise(async (resolve, reject) => {
         resolve({
             statusCode: 200,
@@ -11,4 +11,4 @@ export const handler = async (event, context) => {
             body: JSON.stringify({ "msg": "Hello!" }),
         });
     })
-};
+}
