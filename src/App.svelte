@@ -10,8 +10,8 @@
   import Pricing   from './pages/Pricing.svelte';
   import Contact   from './pages/Contact.svelte';
 
-  import * as data from './data/About.json';
-  const test = data.languages.TypeScript;
+//   import * as data from './data/About.json';
+//   const test = data.languages.TypeScript;
 </script>
   
 <style lang="scss">
@@ -19,7 +19,7 @@
   @import './styles/variables.scss';
 </style>
   
-<h1>{test}</h1>
+<!-- <h1>{test}</h1> -->
 
 <Navbar />
 <ScrollToTop />
