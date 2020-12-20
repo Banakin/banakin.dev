@@ -35,8 +35,4 @@
 <About />
 <Projects />
 <Pricing />
-<<<<<<< HEAD
 <Contact /> -->
-=======
-<Contact />
->>>>>>> 11efceeb9578660a0087290cf7b30bd4847c79de
