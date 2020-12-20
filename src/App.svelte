@@ -26,7 +26,7 @@
   }
 </style>
   
-<h1>{test}</h1>
+<!-- <h1>{test}</h1> -->
 
 <!-- <Navbar />
 <ScrollToTop />
@@ -35,4 +35,8 @@
 <About />
 <Projects />
 <Pricing />
+<<<<<<< HEAD
 <Contact /> -->
+=======
+<Contact />
+>>>>>>> 11efceeb9578660a0087290cf7b30bd4847c79de
