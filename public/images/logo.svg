@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="325" height="350" version="1.1" viewBox="0 0 85.99 92.604" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="a" x1="223.05" x2="277.04" y1="223.76" y2="163.14" gradientTransform="matrix(1.159 0 0 1.1313 -251.57 -167.89)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#e100ff" offset="0"/>
+   <stop stop-color="#ff990a" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path class="cls-1" d="m8.6782 5.8717c75.581-22.199 105.03 24.062 45.906 47.088 43.499 34.897-99.77 77.174-38.821-21.43 5.953-9.6307 16.207-2.0437 10.276 6.226-3.1697 4.4196-19.77 31.04-10.985 40.847 8.7843 9.8068 48.176-7.5282 29.387-21.355-5.0807 0.7783-5.9887 1.2124-9.2299 1.2393-12.535 0.10394-9.0308-9.4977-1.6047-11.109 63.935-13.87 43.243-54.826-23.529-29.511-13.3 5.0423-13.095-8.5602-1.4001-11.995z" fill="url(#a)" stroke-width=".80068"/>
+</svg>

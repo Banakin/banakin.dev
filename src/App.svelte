@@ -4,7 +4,7 @@
   // import ScrollToTop  from './pages/ScrollToTop.svelte';
 
   // // Import pages
-  // import Home      from './pages/Home.svelte';
+  import Home      from './pages/Home.svelte';
   // import About     from './pages/About.svelte';
   // import Projects  from './pages/Projects.svelte';
   // import Pricing   from './pages/Pricing.svelte';
@@ -23,6 +23,8 @@
     font-family: 'Roboto', sans-serif;
     background-color: $black;
     color: $white;
+    margin: 0;
+    padding: 0;
   }
 </style>
   
@@ -31,7 +33,7 @@
 <!-- <Navbar />
 <ScrollToTop />
 
-<Home />
+--><Home /><!--
 <About />
 <Projects />
 <Pricing />
