@@ -21,7 +21,7 @@
 
     section {
         scroll-snap-align: start;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -30,7 +30,7 @@
 
         .grid-container {
             width: 75%;
-            margin: 0;
+            margin: 3rem 0;
             padding: 0;
 
             display: grid;
