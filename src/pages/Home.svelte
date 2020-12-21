@@ -1,6 +1,6 @@
 <script>
 import Icon from 'svelte-awesome';
-import faGithub from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faGithub, faDribbble, faCodepen, faTwitter, faYoutube, faDev } from '@fortawesome/free-brands-svg-icons';
 </script>
 
 <style lang="scss">
@@ -11,3 +11,8 @@ import faGithub from '@fortawesome/free-brands-svg-icons/faGithub';
 <p>Hey, I'm</p>
 <h1>Banakin</h1>
 <Icon data={faGithub}/>
+<Icon data={faDribbble}/>
+<Icon data={faCodepen}/>
+<Icon data={faTwitter}/>
+<Icon data={faYoutube}/>
+<Icon data={faDev}/>
