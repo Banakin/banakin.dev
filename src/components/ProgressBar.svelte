@@ -15,7 +15,7 @@
     div {
         width: 100%;
     }
-
+    
     .progress-bar {
         height: 0.85rem;
         background-color: $gray;
@@ -36,7 +36,14 @@
                 background-color: $purple;
             }
         }
-    }    
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1rem;
+        font-size: 1.25rem;
+    }
 </style>
 <div>
     <div class="progress-bar">

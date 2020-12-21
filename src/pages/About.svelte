@@ -31,8 +31,21 @@
     @import '../styles/variables';
     @import '../styles/section';
 
-    div {
-        width: 100%;
+    section {
+        font-weight: 600;
+
+        div {
+            width: 100%;
+            
+            &.grid-container {
+                column-count: 2;
+                column-gap: 10%;
+
+                @media (max-width: $breakpoint-md) {
+                    column-count: 1;
+                }
+            }
+        }
     }
 </style>
 
