@@ -18,6 +18,9 @@
 <style lang="scss">
   // Import SCSS
   @import './styles/variables.scss';
+  :global(html){
+    scroll-snap-type: y proximity;
+  }
 
   :global(body){
     font-family: 'Roboto', sans-serif;
@@ -26,15 +29,19 @@
     margin: 0;
     padding: 0;
   }
+
+  :global(a){
+    color: unset;
+    text-decoration: none;
+  }
 </style>
-  
-<h1>{test}</h1>
 
 <!-- <Navbar />
-<ScrollToTop />
+<ScrollToTop /> -->
 
---><Home /><!--
-<About />
+<Home />
+
+<!-- <About />
 <Projects />
 <Pricing />
 <Contact /> -->
