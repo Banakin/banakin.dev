@@ -4,7 +4,7 @@
 
     const links = {
         "github"   : "https://github.com/Banakin",
-        "dribbble" : "https://dribbble.com/Banakincode",
+        "dribbble" : "https://dribbble.com/Banakin",
         "codepen"  : "https://codepen.io/Banakin",
         "twitter"  : "https://twitter.com/Banakin9",
         "youtube"  : "https://youtube.com/c/Banakin",
