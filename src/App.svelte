@@ -5,7 +5,7 @@
 
   // // Import pages
   import Home      from './pages/Home.svelte';
-  // import About     from './pages/About.svelte';
+  import About     from './pages/About.svelte';
   // import Projects  from './pages/Projects.svelte';
   // import Pricing   from './pages/Pricing.svelte';
   // import Contact   from './pages/Contact.svelte';
@@ -15,14 +15,15 @@
   const test = "test";
 </script>
   
-<style lang="scss">
+<style lang="scss" global>
   // Import SCSS
-  @import './styles/variables.scss';
-  :global(html){
+  @import './styles/variables';
+
+  html{
     scroll-snap-type: y proximity;
   }
 
-  :global(body){
+  body{
     font-family: 'Roboto', sans-serif;
     background-color: $black;
     color: $white;
@@ -30,7 +31,7 @@
     padding: 0;
   }
 
-  :global(a){
+  a{
     color: unset;
     text-decoration: none;
   }
@@ -40,8 +41,8 @@
 <ScrollToTop /> -->
 
 <Home />
+<About />
 
-<!-- <About />
-<Projects />
+<!-- <Projects />
 <Pricing />
 <Contact /> -->

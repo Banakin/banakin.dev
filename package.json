@@ -7,7 +7,8 @@
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "svelte": "^3.24.0",
-    "svelte-awesome": "^2.3.0"
+    "svelte-awesome": "^2.3.0",
+    "svelte-inview": "^1.0.0"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",

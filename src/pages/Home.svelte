@@ -2,6 +2,8 @@
     import Icon from 'svelte-awesome';
     import { faGithub, faDribbble, faCodepen, faTwitter, faYoutube, faDev } from '@fortawesome/free-brands-svg-icons';
 
+    const pageTitle = "home";
+
     const links = {
         "github"   : "https://github.com/Banakin",
         "dribbble" : "https://dribbble.com/Banakin",
@@ -15,110 +17,99 @@
 </script>
 
 <style lang="scss">
-    @import '../styles/variables.scss';
+    @import '../styles/variables';
+    @import '../styles/section';
 
     $logo-width: 12.5rem;
 
-    section {
-        scroll-snap-align: start;
-        min-height: 100vh;
+    .grid-container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: 3rem 0;
+        padding: 0;
 
-        .grid-container {
-            width: 75%;
-            margin: 3rem 0;
-            padding: 0;
+        display: grid;
+        column-gap: 3rem;
+        
+        grid-template-columns: $logo-width auto;
+        grid-template-rows: 1.5fr 0.5fr;
+        grid-template-areas:
+        'logo title'
+        'logo social';
 
-            display: grid;
-            column-gap: 3rem;
-            
-            grid-template-columns: $logo-width auto;
-            grid-template-rows: 1.5fr 0.5fr;
+        @media (max-width: $breakpoint-md) {
+            row-gap: 3rem;
+
+            grid-template-columns: auto;
+            grid-template-rows: auto;
             grid-template-areas:
-            'logo title'
-            'logo social';
+            'logo'
+            'title'
+            'social';
+        }
+
+        .logo {
+            grid-area: logo;
+            width: 100%;
 
             @media (max-width: $breakpoint-md) {
-                width: 85%;
-
-                row-gap: 3rem;
-
-                grid-template-columns: auto;
-                grid-template-rows: auto;
-                grid-template-areas:
-                'logo'
-                'title'
-                'social';
+                width: $logo-width;
+                margin: 0 auto;
             }
+        }
 
-            .logo {
-                grid-area: logo;
-                width: 100%;
+        .title {
+            grid-area: title;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
 
-                @media (max-width: $breakpoint-md) {
-                    width: $logo-width;
-                    margin: 0 auto;
-                }
-            }
-
-            .title {
-                grid-area: title;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-
-                @media (max-width: $breakpoint-md) {
-                    align-items: center;
-                }
-
-                p {
-                    margin: 0;
-                    padding: 0;
-                    font-size: 2.25rem;
-                    @media (max-width: $breakpoint-md) {
-                        font-size: 1.75rem;
-                    }
-                }
-                
-                h1 {
-                    margin: 0;
-                    margin-top: -0.5rem;
-                    padding: 0;
-                    font-size: 5rem;
-                    @media (max-width: $breakpoint-md) {
-                        font-size: 4rem;
-                    }
-                }
-            }
-
-            .icon-group {
-                grid-area: social;
-                display: flex;
-                flex-direction: row;
-                justify-content: left;
+            @media (max-width: $breakpoint-md) {
                 align-items: center;
-                width: 100%;
-                flex-wrap: wrap;
+            }
 
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 2.25rem;
                 @media (max-width: $breakpoint-md) {
-                    justify-content: center;
+                    font-size: 1.75rem;
                 }
+            }
+            
+            h1 {
+                margin: 0;
+                margin-top: -0.5rem;
+                padding: 0;
+                font-size: 5rem;
+                @media (max-width: $breakpoint-md) {
+                    font-size: 4rem;
+                }
+            }
+        }
 
-                a {
-                    margin: 0 10px;
-                }
+        .icon-group {
+            grid-area: social;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+
+            @media (max-width: $breakpoint-md) {
+                justify-content: center;
+            }
+
+            a {
+                margin: 0 10px;
             }
         }
     }
 </style>
 
 
-<section id="home">
+<section id={pageTitle}>
     <div class="grid-container">
         <img class="logo" src="/images/logo.svg" alt="Banakin Logo" />
         <div class="title">
