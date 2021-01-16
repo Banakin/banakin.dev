@@ -1,11 +1,8 @@
 <script>
-    import Inview from 'svelte-inview';
-    
+    export let isInView;
     export let completion;
     export let label;
     export let color;
-
-    let ref;
 </script>
 
 <style lang="scss">
@@ -47,17 +44,10 @@
 </style>
 <div>
     <div class="progress-bar">
-        <Inview
-            let:inView
-            wrapper={ref}
-            unobserveOnEnter={true}>
-            <span 
-                bind:this={ref}
-                class={color}
-                style="width: {inView ? completion : 0}%">
-            </span>
-
-        </Inview>
+        <span
+            class={color}
+            style="width: {isInView ? completion : 0}%">
+        </span>
     </div>
     <p>{label}</p>
 </div>

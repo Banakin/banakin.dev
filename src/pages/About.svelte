@@ -1,6 +1,8 @@
 <script>
     import ProgressBar from '../components/ProgressBar.svelte';
 
+    import Inview from 'svelte-inview';
+
     import Icon from 'svelte-awesome';
     import { faGithub, faDribbble, faCodepen, faTwitter, faYoutube, faDev } from '@fortawesome/free-brands-svg-icons';
 
@@ -24,7 +26,8 @@
         "dev"      : "https://dev.to/banakin",
     }
 
-    const iconScale = "3.5"
+    const iconScale = "3.5";
+    let ref;
 </script>
 
 <style lang="scss">
@@ -99,15 +102,23 @@
     <h1>About Me</h1>
     <div class="page-section">
         <p>My confidence with languages</p>
-        <div class="grid-container">
-            {#each progress as bar, i}
-                {#if i < Math.round(progress.length/2)}
-                    <ProgressBar completion={bar[1]} color="orange" label={bar[0]} />
-                {:else}
-                    <ProgressBar completion={bar[1]} color="purple" label={bar[0]} />
-                {/if}
-            {/each}
-        </div>
+        <Inview
+            let:inView
+            wrapper={ref}
+            unobserveOnEnter={true}>
+            <div class="grid-container"
+                bind:this={ref}>
+                
+                {#each progress as bar, i}
+                    {#if i < Math.round(progress.length/2)}
+                        <ProgressBar completion={bar[1]} color="orange" isInView={inView} label={bar[0]} />
+                    {:else}
+                        <ProgressBar completion={bar[1]} color="purple" isInView={inView} label={bar[0]} />
+                    {/if}
+                {/each}
+
+            </div>
+        </Inview>
     </div>
     <div class="page-section">
         <p>Tools im familiar with</p>
