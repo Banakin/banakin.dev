@@ -1,7 +1,7 @@
 <script lang='typescript'>
   // Import components
   // import Navbar       from './pages/Navbar.svelte';
-  // import ScrollToTop  from './pages/ScrollToTop.svelte';
+  import ScrollToTop  from './components/ScrollToTop.svelte';
 
   // // Import pages
   import Home      from './pages/Home.svelte';
@@ -37,8 +37,8 @@
   }
 </style>
 
-<!-- <Navbar />
-<ScrollToTop /> -->
+<!-- <Navbar /> -->
+<ScrollToTop />
 
 <Home />
 <About />
