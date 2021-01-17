@@ -28,6 +28,11 @@
             height: 0.5rem;
             margin: 0;
             padding: 0;
+
+            @media (max-width: $breakpoint-md) {
+                display: none;
+            }
+
             span {
                 margin: 0;
                 padding: 0;
@@ -45,6 +50,11 @@
             line-height: 28px;
             align-items: center;
             text-align: center;
+            
+            @media (max-width: $breakpoint-md) {
+                // flex-direction: column;
+                display: none;
+            }
 
             div {
                 text-align: center;
