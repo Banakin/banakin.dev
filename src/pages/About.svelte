@@ -26,7 +26,7 @@
         "dev"      : "https://dev.to/banakin",
     }
 
-    const iconScale = "3.5";
+    const iconScale = "3";
     let ref;
 </script>
 

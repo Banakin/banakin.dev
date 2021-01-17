@@ -17,15 +17,23 @@
 <style lang="scss">
     @import '../styles/variables';
 
+    $nav-width: 40rem;
+    $indicator-height: 0.5rem;
+    $link-padding: 1rem;
+    $nav-font-size: 1.25rem;
+
     .navbar {
-        right: 0;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         z-index: 100;
         position: fixed;
+        width: 100%;
+        background-color: $black;
 
         .scroll-indicator {
-            width: 100%;
-            height: 0.5rem;
+            width: $nav-width;
+            height: $indicator-height;
             margin: 0;
             padding: 0;
 
@@ -45,9 +53,8 @@
         .nav-links {
             display: flex;
             flex-direction: row;
-            width: 45rem;
-            font-size: 24px;
-            line-height: 28px;
+            width: $nav-width;
+            font-size: $nav-font-size;
             align-items: center;
             text-align: center;
             
@@ -58,9 +65,12 @@
 
             div {
                 text-align: center;
-                padding: 1rem 0;
+                padding: 0;
+                padding-top: $link-padding;
+                padding-bottom: $link-padding + $indicator-height;
                 flex-grow: 1;
                 flex-basis: 0;
+                cursor: pointer;
             }
         }
     }
