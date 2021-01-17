@@ -1,5 +1,5 @@
 <script>
-    export let isInView;
+    export let inView;
     export let completion;
     export let label;
     export let color;
@@ -46,7 +46,7 @@
     <div class="progress-bar">
         <span
             class={color}
-            style="width: {isInView ? completion : 0}%">
+            style="width: {inView ? completion : 0}%">
         </span>
     </div>
     <p>{label}</p>

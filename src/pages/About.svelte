@@ -111,9 +111,9 @@
                 
                 {#each progress as bar, i}
                     {#if i < Math.round(progress.length/2)}
-                        <ProgressBar completion={bar[1]} color="orange" isInView={inView} label={bar[0]} />
+                        <ProgressBar completion={bar[1]} color="orange" inView={inView} label={bar[0]} />
                     {:else}
-                        <ProgressBar completion={bar[1]} color="purple" isInView={inView} label={bar[0]} />
+                        <ProgressBar completion={bar[1]} color="purple" inView={inView} label={bar[0]} />
                     {/if}
                 {/each}
 

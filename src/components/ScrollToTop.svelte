@@ -26,7 +26,6 @@ div {
     background-color: $white;
     position: fixed;
     line-height: 100%;
-
     span{
         width: 100%;
         text-align: center;
