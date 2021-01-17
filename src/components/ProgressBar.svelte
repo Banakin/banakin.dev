@@ -7,7 +7,6 @@
 
 <style lang="scss">
     @import '../styles/variables';
-    @import '../styles/section';
 
     div {
         width: 100%;

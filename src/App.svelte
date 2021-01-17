@@ -1,6 +1,6 @@
 <script lang='typescript'>
   // Import components
-  // import Navbar       from './pages/Navbar.svelte';
+  import Navbar       from './components/Navbar.svelte';
   import ScrollToTop  from './components/ScrollToTop.svelte';
 
   // // Import pages
@@ -20,7 +20,7 @@
   @import './styles/variables';
 
   html{
-    scroll-snap-type: y proximity;
+    // scroll-snap-type: y proximity;
   }
 
   body{
@@ -37,7 +37,7 @@
   }
 </style>
 
-<!-- <Navbar /> -->
+<Navbar />
 <ScrollToTop />
 
 <Home />
