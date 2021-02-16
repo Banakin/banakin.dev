@@ -1,7 +1,8 @@
 <script>
     import * as animateScroll from "svelte-scrollto";
 
-    let pageY, pageHeight;
+    let pageY, viewHeight;
+    let pageHeight = document.body.clientHeight;
 
     const pages = [
         ['Home'      , '#home'],
@@ -12,7 +13,7 @@
     ]
 </script>
 
-<svelte:window bind:scrollY={pageY} bind:innerHeight={pageHeight}/>
+<svelte:window bind:scrollY={pageY} bind:innerHeight={viewHeight} />
 
 <style lang="scss">
     @import '../styles/variables';
@@ -79,7 +80,9 @@
 <div class="navbar">
     <div class="scroll-indicator">
         <span
-            style="width: {(1/pages.length)*100}%; margin-left: {(pageY/pageHeight)*(100-((1/pages.length)*100))}%;">
+            style="width: {(1/pages.length)*100}%; margin-left: {(pageY/(pageHeight ))*(100-((1/pages.length)*100))}%;">
+
+            <!-- - viewHeight -->
         </span>
     </div>
     <div class="nav-links">

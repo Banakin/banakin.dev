@@ -1,4 +1,4 @@
-<script lang='typescript'>
+<script>
   // Import components
   import Navbar       from './components/Navbar.svelte';
   import ScrollToTop  from './components/ScrollToTop.svelte';
@@ -6,7 +6,7 @@
   // // Import pages
   import Home      from './pages/Home.svelte';
   import About     from './pages/About.svelte';
-  // import Projects  from './pages/Projects.svelte';
+  import Projects  from './pages/Projects.svelte';
   // import Pricing   from './pages/Pricing.svelte';
   // import Contact   from './pages/Contact.svelte';
 
@@ -14,7 +14,7 @@
   // const test = data.languages.TypeScript;
   const test = "test";
 </script>
-  
+
 <style lang="scss" global>
   // Import SCSS
   @import './styles/variables';
@@ -43,6 +43,6 @@
 <Home />
 <About />
 
-<!-- <Projects />
-<Pricing />
+<Projects />
+<!-- <Pricing />
 <Contact /> -->
